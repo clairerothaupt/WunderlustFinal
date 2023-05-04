@@ -1,0 +1,241 @@
+/* Claire Rothaupt*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    background: #95c6e6;
+  }
+  body {
+    width:1000px;
+    margin:0 auto;
+  }
+  header, footer {
+    width: 100%;
+    color: #000000;
+  }
+  header {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  footer {
+    border-top:3px solid #F7CE3E;
+    height:auto;
+    text-align:center;
+    padding-top:10px;
+  }
+  #menu{
+    background-color:#F6D64A;
+  }
+  nav {
+    background-color:#55BCD5;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+  }
+  nav a, button {
+    color:#ffffff;
+    padding:15px;
+    text-decoration:none;
+  }
+  nav a:hover, button:hover {
+    color:#F7CE3E;
+  }
+  img {
+    display: block;
+    width: auto 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  h1, h2, h3{
+    font-family: molle, Arial, Helvetica, sans-serif;
+  }
+  p{
+    font-family: Montserrat, Arial;
+    position: center;
+  }
+  
+  #plan{
+    display:grid;
+    padding-left: 60px;
+    position: center;
+    justify-content: center;
+    width: 300px;
+    grid-template-columns: 1fr;
+    background-color: #F6D64A;
+}
+#testimonials{
+    display:grid;
+    padding-left: 60px;
+    position: center;
+    justify-content: center;
+    width: 300px;
+    grid-template-columns: 1fr;
+    background-color: #FFFFFF;
+}
+#about{
+    display:grid;
+    padding-left: 60px;
+    position: center;
+    justify-content: center;
+    width: 300px;
+    grid-template-columns: 1fr;
+    background-color: #499BD2;
+}
+
+#contact{
+    background-color:#9B26B0;
+    width: 400px;
+}
+form{
+	display: block;
+	width: 300px;
+	padding: 1em;
+	margin: 0 auto;
+	color: #222;
+	font-size: 1.1em;
+}
+
+input, label, fieldset{
+	display: block;
+	width: 95%;
+}
+
+.required{
+  display: inline-block;
+  color: #DE0B63;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid #9B26B0;
+	height: 1.5em;
+}
+
+fieldset{
+	border: 1px solid #9B26B0;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	width: 35%;
+	height: auto;
+	margin-left: 67%;
+	color: #fff;
+	background-color: #9B26B0;
+	border: none;
+	font-family: serif;
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+input:focus, textarea:focus{
+	border-color: blue;
+	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
+	border-radius: 4px;
+}
+
+input:error, textarea:error{
+	border-color: #DE0B63;
+}
+
+
+/* Screen Sizes 320px and Up */
+@media (min-width: 320px) {
+    #landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    #landing-text {
+      height: 100vh;
+    }
+  
+    #landing-image {
+      height: 100vh;
+    }
+  }
+  
+  footer div{
+    display: grid;
+    grid-column-template: 1fr 1fr;
+    grid-gap: 1rem;
+  /*  
+    SET THE DISPLAY TO GRID
+    ADD A GRID COLUMN TEMPLATE OF 1FR 1FR
+    ADD A GRID GAP OF 1rem
+  */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .mobile{
+    display: none;
+  }
+  
+  .desktop{
+    display: block;
+  }
